@@ -27,3 +27,23 @@ test('sumDefault', assert => {
   assert.equal(actual, expected, msg);
   assert.end();
 });
+
+sumRanges = (numbers = []) => (range = 0) =>
+{
+  if (!numbers || !range || range > numbers.length)
+    throw Error("Invalid input");
+    
+  const front = nums.slice(0, range);
+  const remaining = nums.slice(range);
+  const firstAcc = front.sum();
+  const summedRanges = remaining.reduce((acc, curr, index) => 
+    acc.concat([curr + acc[index] - nums[index]]), 
+    [firstAcc]);
+  
+  return summedRanges;
+}
+
+const nums = [1, -2, 4, 6, 10, 20];
+const range = 5;
+
+console.log(sumRanges(nums)(range));
