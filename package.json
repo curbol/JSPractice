@@ -16,7 +16,6 @@
     "babel-jest": "^25.3.0",
     "jest": "^25.3.0",
     "ts-jest": "^25.3.1",
-    "typescript": "^3.8.3",
-    "nodemon": "^2.0.3"
+    "typescript": "^3.8.3"
   }
 }
