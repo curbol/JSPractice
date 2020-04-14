@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
-    "outDir": "./dist",
     "moduleResolution": "node",
     "lib": ["esnext", "esnext.asynciterable", "dom"],
     "esModuleInterop": true,
@@ -10,8 +9,7 @@
     "sourceMap": true,
     "strict": false,
     "noEmit": true,
-    "experimentalDecorators": true,
-    "baseUrl": "."
+    "experimentalDecorators": true
   },
   "exclude": ["node_modules", "dist"]
 }
